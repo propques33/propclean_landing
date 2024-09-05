@@ -1,6 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>PropClean</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +16,19 @@
                 <div class="logo"><img src="images/logo.png" alt="PropClean Logo"></div>
                 <ul class="navul">
                     <li class="navli"><a class="nava" href="#">Home</a></li>
-                    <li class="navli"><a class="nava" href="#">Features</a></li>
-                    <li class="navli"><a class="nava" href="#">App</a></li>
-                    <li class="navli"><a class="nava" href="#">Pricing</a></li>
-                    <li class="navli"><a class="nava" href="#">FAQs</a></li>
-                    <li class="navli"><a class="nava" href="#">Contact</a></li>
+                    <li class="navli"><a class="nava" href="#2">Features</a></li>
+                    <li class="navli"><a class="nava" href="#3">App</a></li>
+                    <li class="navli"><a class="nava" href="#4">Pricing</a></li>
+                    <li class="navli"><a class="nava" href="#5">FAQs</a></li>
+                    <li class="navli"><a class="nava" href="#6">Contact</a></li>
                 </ul>
                 <div class="login">
-                    <button class="login"><span class="material-symbols-outlined">
+                    <button type="submit" class="login"><span class="material-symbols-outlined">
                         login
-                        </span>Login</button>
+                    </span>Book a Trial</button>
                 </div>
             </div>
-            <div class="home1">
+            <div class="home1" id="1">
                 <div class="heading">PropClean</div>
                 <div class="points">
                     <ul class="pointsul">
@@ -39,8 +41,8 @@
                 </div>
                 <form class="subscribe-form">
                     <input type="email" placeholder="info@yourmail.com">
-                    <button type="submit">Start free trial</button>
-                </form>                
+                    <button type="submit" class="free">Start free trial</button>
+                </form>           
             </div>
             <div class="mobile-image">
                 <img src="images/Rectangle.png" alt="Mobile App">
@@ -74,9 +76,9 @@
             </div>
         </div>
 
-        <div class="about-section">
+        <div class="about-section" id="2">
             <div class="interface-title">
-                <span class="interface-icon">💡</span><span style="color:blue">Awesome </span> <span>Interface</span>
+                <span class="interface-icon">💡</span><span style="color:blue">Premium </span> <span>Features</span>
             </div>
             <h2 class="about-title">What Makes PropClean Different?</h2>
             <p class="about-subtitle">
@@ -87,15 +89,15 @@
                     <ul class="about-features">
                         <li class="about-feature">
                             <h3><img class="aboutlogo" src="images/layers.png">Fully functional</h3>
-                            <p>Fully integrated solution that streamlines workspace management, ensuring efficient task handling from start to finish.</p>
+                            <p> Manage tasks efficiently from start to finish, enhancing productivity and simplifying workspace operations.</p>
                         </li>
                         <li class="about-feature">
                             <h3><img class="aboutlogo" src="images/stock.png">Stock Management</h3>
-                            <p>Never run out of essential supplies. PropClean tracks your inventory and alerts you when it’s time to reorder, ensuring you’re always prepared.</p>
+                            <p>Never run out of supplies—PropClean monitors inventory, alerts you when to reorder, and keeps you ready at all times.</p>
                         </li>
                         <li class="about-feature">
                             <h3><img class="aboutlogo" src="images/lock.png">Secure Data</h3>
-                            <p>All data is encrypted and secured, ensuring that only authorized users can access sensitive information. Your workspace’s privacy is our top priority.</p>
+                            <p>With encryption and strict access controls, only authorized users can access sensitive workspace information.</p>
                         </li>
                     </ul>
                 </div>
@@ -106,15 +108,15 @@
                     <ul class="about-features">
                         <li class="about-feature">
                             <h3><img class="aboutlogo" src="images/supoort.png">Real-Time Dashboard</h3>
-                            <p>Get a clear overview of all ongoing and completed tasks in one place, allowing for easy management and quick decision-making.</p>
+                            <p>View all ongoing and completed tasks at a glance, enabling fast decisions and simplified management.</p>
                         </li>
                         <li class="about-feature">
                             <h3><img class="aboutlogo" src="images/hey.png">User-Friendly Interface</h3>
-                            <p>Designed with simplicity in mind, the app is easy to navigate, ensuring that both staff and admins can use it effectively with minimal training.</p>
+                            <p>Designed for ease of use, the app allows both staff and admins to operate smoothly with little to no training.</p>
                         </li>
-                        <li class="images/about-feature">
-                            <h3>Real-Time Monitoring</h3>
-                            <p>Keep your spaces clean and compliant with photo-based updates. Supervisors can remotely monitor tasks and ensure standards are met without needing to be on-site.</p>
+                        <li class="about-feature">
+                            <h3><img class="aboutlogo" src="images/code.png.png">Real-Time Monitoring</h3>
+                            <p>Keep spaces clean with photo-based updates. Supervisors can oversee tasks and ensure standards from anywhere.</p>
                         </li>
                     </ul>
                 </div>
@@ -126,55 +128,68 @@
                 Effortlessly manage your facility with PropClean. Assign tasks, monitor progress with real-time photos, manage inventory, and generate reports—all from one powerful app.
             </p>
             <div class="how-steps">
-                <div class="step">
-                    <img src="images/how1.png" alt="Install the App" class="step-icon">
-                    <h3>Install the App</h3>
-                    <p>Quickly download and set up the app on your device.</p>
+                <div class="st">
+                    <div class="step">
+                        <img src="images/how1.png" alt="Install the App" class="step-icon">
+                        <h3>Install the App</h3>
+                        <p>Quickly download and set up the app on your device.</p>
+                    </div>
+                    <div class="arrow">></div>
                 </div>
-                <div class="arrow">></div> <!-- Arrow between steps -->
-                <div class="step">
-                    <img src="images/setup.png" alt="Setup your Space" class="step-icon">
-                    <h3>Setup your Space</h3>
-                    <p>Quickly configure locations, tasks, and roles to match your workspace needs for seamless management.</p>
+                <div class="st">
+                    <div class="step">
+                        <img src="images/setup.png" alt="Setup your Space" class="step-icon">
+                        <h3>Setup your Space</h3>
+                        <p>Quickly configure locations, tasks, and roles to match your workspace needs for seamless management.</p>
+                    </div>
+                    <div class="arrow">></div>
                 </div>
-                <div class="arrow">></div> <!-- Arrow between steps -->
-                <div class="step">
-                    <img src="images/onboard.png" alt="Onboard Your Staff" class="step-icon">
-                    <h3>Onboard Your Staff</h3>
-                    <p>Easily add team members, assign roles, and get everyone set up to start managing tasks efficiently.</p>
-                    
+                <div class="st">
+                    <div class="step">
+                        <img src="images/onboard.png" alt="Onboard Your Staff" class="step-icon">
+                        <h3>Onboard Your Staff</h3>
+                        <p>Easily add team members, assign roles, and get everyone set up to start managing tasks efficiently.</p>
+                        
+                    </div>
                 </div>
-                
-                <div class="step">
-                    <img src="images/tasks.png" alt="Complete Tasks" class="step-icon">
-                    <h3>Complete Tasks</h3>
-                    <p>Team members complete assigned tasks and upload real-time photos.</p>
+                <div class="st">
+                    <div class="step">
+                        <img src="images/tasks.png" alt="Complete Tasks" class="step-icon">
+                        <h3>Complete Tasks</h3>
+                        <p>Team members complete assigned tasks and upload real-time photos.</p>
+                    </div>
+                    <div class="arrow">></div>
                 </div>
-                <div class="arrow">></div> <!-- Arrow between steps -->
-                <div class="step">
-                    <img src="images/pass.png" alt="Approve Tasks" class="step-icon">
-                    <h3>Approve Tasks</h3>
-                    <p>Admins review completed work, approve or disapprove, and provide ratings.</p>
+                <div class="st">
+                    <div class="step">
+                        <img src="images/pass.png" alt="Approve Tasks" class="step-icon">
+                        <h3>Approve Tasks</h3>
+                        <p>Admins review completed work, approve or disapprove, and provide ratings.</p>
+                    </div>
+                    <div class="arrow">></div>
                 </div>
-                <div class="arrow">></div> <!-- Arrow between steps -->
-                <div class="step">
-                    <img src="images/last.png" alt="Track Progress" class="step-icon">
-                    <h3>Track Progress</h3>
-                    <p>Monitor the status of all tasks through a user-friendly dashboard.</p>
+                <div class="st">
+                    <div class="step">
+                        <img src="images/last.png" alt="Track Progress" class="step-icon">
+                        <h3>Track Progress</h3>
+                        <p>Monitor the status of all tasks through a user-friendly dashboard.</p>
+                    </div>
                 </div>
             </div>
             
         </div>
         <!-- Existing HTML -->
 
-        <div class="interface-section">
+        <div class="interface-section" id="3">
             <div class="interface-title">
                 <span class="interface-icon">💡</span><span style="color:blue">Awesome </span> <span>Interface</span>
             </div>
-            <h2 class="interface-heading">Where Functionality Meets <br>Aesthetics</h2>
+            <h2 class="interface-heading">Where Functionality Meets Aesthetics</h2>
             <p class="interface-description">
                 Explore a seamless blend of efficiency and design. Our intuitive interface ensures smooth task management while offering a visually stunning experience that enhances your workflow.
             </p>
+            <div class="sec">
+            <button class="carousel-prev">&lt;</button>
             <div class="carousel-container">
                 <div class="carousel">
                     <img src="images/screen1.png" alt="Screen 1" class="screenshot">
@@ -203,17 +218,17 @@
                     <img src="images/screen3.png" alt="Screen 3" class="screenshot">
                     <img src="images/screen4.png" alt="Screen 4" class="screenshot">
                 </div>
-                <button class="carousel-prev">&lt;</button>
-                <button class="carousel-next">&gt;</button>
             </div>
+            <button class="carousel-next">&gt;</button>
+        </div>
         </div>
        
 
         <div class="reviews-section">
-            <div class="reviews-title">
-                <span class="reviews-icon">💡</span> Customer’s Reviews
+            <div class="interface-title">
+                <span class="interface-icon">💡</span><span style="color:blue">Customer's </span> <span>Reviews</span>
             </div>
-            <h2 class="reviews-heading">What Our Customers Are Saying</h2>
+            <h2 class="interface-heading">What Our Customers Are Saying</h2>
             <p class="reviews-description">
                 Hear from our satisfied users who have transformed their workspace management with PropClean. From improved efficiency to seamless task tracking, discover how PropClean is making a difference in coworking spaces just like yours.
             </p>
@@ -225,7 +240,7 @@
                         PropClean has completely transformed how we manage our coworking space. The real-time updates and photo verification make it so much easier to ensure tasks are completed to our standards. It's a game-changer!
                     </p>
                     <div class="review-author">
-                        <img src="images/customer1.jpg" alt="Arvind N." class="review-author-photo">
+                        <img src="images/customer.png" alt="Arvind N." class="review-author-photo">
                         <div class="review-author-info">
                             <p class="review-author-name">Arvind N.</p>
                             <p class="review-author-title">CEO, Themeland</p>
@@ -239,7 +254,7 @@
                         The intuitive interface and seamless task tracking have made my job as an admin so much simpler. I can now monitor and approve tasks on the go, and our workspace has never been better maintained.
                     </p>
                     <div class="review-author">
-                        <img src="images/customer2.jpg" alt="Junaid Hasan" class="review-author-photo">
+                        <img src="images/customer.png" alt="Junaid Hasan" class="review-author-photo">
                         <div class="review-author-info">
                             <p class="review-author-name">Junaid Hasan</p>
                             <p class="review-author-title">CEO, Themeland</p>
@@ -248,18 +263,19 @@
                 </div>
                 <div class="review-card">
                     <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                    <h3 class="review-title">Nice work! Keep it up</h3>
+                    <h3 class="review-title">Great Support!!</h3>
                     <p class="review-text">
-                        The intuitive interface and seamless task tracking have made my job as an admin so much simpler. I can now monitor and approve tasks on the go, and our workspace has never been better maintained.
+                        PropClean’s photo verification and approval system give me peace of mind that our space is always in top condition. It’s easy to use, and the team loves it too. Highly recommend!
                     </p>
                     <div class="review-author">
-                        <img src="images/customer2.jpg" alt="Junaid Hasan" class="review-author-photo">
+                        <img src="images/customer.png" alt="Junaid Hasan" class="review-author-photo">
                         <div class="review-author-info">
                             <p class="review-author-name">Junaid Hasan</p>
                             <p class="review-author-title">CEO, Themeland</p>
                         </div>
                     </div>
                 </div>
+                
                 <!-- Add more review cards here as needed -->
             </div>
             <div class="carousel-indicators">
@@ -268,13 +284,13 @@
                 <span class="dot"></span>
             </div>
         </div>
-        <div class="pricing-section">
-            <h2 class="pricing-title">Unlock Full Power Of<br>PropClean</h2>
+        <div class="pricing-section" id="4">
+            <h2 class="pricing-title">Unlock Full Power Of PropClean</h2>
             <p class="pricing-subtitle">
-                Flexible plans to suit any workspace. Start with a free trial and<br> upgrade as needed. Transparent pricing that scales with you.
+                Flexible plans to suit any workspace. Start with a free trial and upgrade as needed. Transparent pricing that scales with you.
             </p>
             <div class="pricing-switch">
-                <span style="font-weight: bold;">Pricing in:</span>
+                <span class="pt">Pricing in:</span>
                 <span class="currency-label usd-label">$ USD</span>
                 <label class="switch">
                     <input type="checkbox" id="pricingToggle">
@@ -282,11 +298,12 @@
                 </label>
                 <span class="currency-label inr-label">₹ INR</span>
             </div>
-            
-            <div class="billing-cycle">
-                <button class="billing-btn active" id="monthlyBtn">Monthly</button>
-                <button class="billing-btn" id="annuallyBtn">Annually <span>20% OFF</span></button>
+
+            <div class="toggle-container">
+                <div id="monthlyBtn" class="toggle-option">Monthly</div>
+                <div id="annuallyBtn" class="toggle-option">Annually <span class="discount">20%</span></div>
             </div>
+            
             <div class="pricing-cards">
                 <div class="pricing-card">
                     <img src ="images/Lawyer.png">
@@ -311,7 +328,7 @@
                     </ul>
                 </div>
                 <div class="pricing-card">
-                    <img src ="images/Lawyer.png">
+                    <img src ="images/Business Building.png">
                     <h3 class="pricing-card-title">Enterprise</h3>
                     <p class="pricing-amount" id="enterprisePrice">$129</p>
                     <ul class="pricing-features">
@@ -327,74 +344,125 @@
             </p>
         </div>
         
-        <div class="faq-section">
+        
+        <div class="faq-section" id="5">
             <h2 class="faq-title">Have Questions? Look Here</h2>
-            <p class="faq-subtitle">Find Answers to Your Questions: Everything You Need to Know About<br>PropClean</p>
+            <p class="faq-subtitle">Find Answers to Your Questions: Everything You Need to Know About PropClean</p>
             <div class="faq-container">
                 <div class="faq-item">
-                    <div class="faq-question">What is PropClean?</div>
+                    <div class="faq-question">
+                        <span>What is PropClean?</span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
                     <div class="faq-answer">
                         PropClean is an operations management app designed to streamline the cleaning and maintenance of physical spaces. It allows users to assign tasks, monitor progress with real-time photos, manage inventory, and generate reports—all from one intuitive platform.
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">How does PropClean help with facility management?</div>
+                    <div class="faq-question">
+                        <span>How does PropClean help with facility management?</span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
                     <div class="faq-answer">
                         PropClean helps facility managers by enabling real-time monitoring of cleaning and maintenance tasks through photo-based updates. It also automates inventory management, ensuring that supplies are always stocked, and provides detailed reports to help optimize operations.
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Who can use PropClean?</div>
+                    <div class="faq-question">
+                        <span>Who can use PropClean?</span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
                     <div class="faq-answer">
                         PropClean is ideal for facility managers, office administrators, property management companies, and cleaning service providers who need an efficient way to manage and monitor space cleanliness and maintenance.
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can PropClean be used on mobile devices?</div>
+                    <div class="faq-question">
+                        <span>Can PropClean be used on mobile devices?</span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
                     <div class="faq-answer">
                         Yes, PropClean is mobile-friendly. You can manage your facility, assign tasks, and monitor progress from anywhere using our user-friendly mobile app.
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Does PropClean integrate with other facility management systems?</div>
+                    <div class="faq-question">
+                        <span>Does PropClean integrate with other facility management systems?</span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
                     <div class="faq-answer">
                         Yes, PropClean can easily integrate with your existing facility management systems, allowing you to streamline operations and enhance your current processes.
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">How does PropClean manage inventory?</div>
+                    <div class="faq-question">
+                        <span>How does PropClean manage inventory?</span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
                     <div class="faq-answer">
                         PropClean tracks your stock levels in real time and alerts you when supplies are running low. You can also set predefined thresholds for automatic reordering, ensuring you never run out of essential items.
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Is PropClean secure?</div>
+                    <div class="faq-question">
+                        <span>Is PropClean secure?</span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
                     <div class="faq-answer">
                         Yes, PropClean takes security seriously. We use industry-standard encryption and security practices to protect your data and ensure that only authorized users have access to your facility management information.
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">How do I get started with PropClean?</div>
+                    <div class="faq-question">
+                        <span>How do I get started with PropClean?</span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
                     <div class="faq-answer">
                         Getting started with PropClean is easy. Simply sign up, customize the app to fit your facility's needs, and start assigning tasks and monitoring progress. Our support team is also available to assist you with any setup questions.
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">What kind of reports can I generate with PropClean?</div>
+                    <div class="faq-question">
+                        <span>What kind of reports can I generate with PropClean?</span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
                     <div class="faq-answer">
                         PropClean allows you to generate comprehensive reports on task completion, stock usage, and overall facility cleanliness. These reports can be used for audits, reviews, and to make informed decisions about facility management.
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Is there customer support available?</div>
+                    <div class="faq-question">
+                        <span>Is there customer support available?</span>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </div>
                     <div class="faq-answer">
                         Yes, PropClean offers customer support to help you with any questions or issues you may have. Our support team is dedicated to ensuring that you get the most out of PropClean.
                     </div>
                 </div>
             </div>
         </div>
-        <div class="contact-section">
-            <h2 class="faq-title">Contact Us</h2>
+        <div class="contact-section" id="6">
+            <h2 class="contact-title">Contact Us</h2>
             <p class="contact-subtitle">Get in Touch: We’re Here to Help with Any Questions or Support You Need</p>
             <div class="contact-container">
                 <div class="contact-info">
@@ -404,12 +472,12 @@
                             <p><img src="images/address.png">Excel Coworks – Naagarabhaavi, Bangalore<br>
                             3rd Floor, Tushar Arcade, Service Road, Naagarabhaavi, Bengaluru, Karnataka 560072</p>
                         </div>
-                        <div class="contact-item">
-                            <img src="images/phone.png">
+                        <div class="contact-item" style="display:flex;align-items:center;">
+                            <img src="images/phone.png" style="width:40px;height:40px;">
                             <p>+91-7392037856</p>
                         </div>
-                        <div class="contact-item">
-                            <img src="images/mail.png">
+                        <div class="contact-item" style="display:flex;align-items:center;">
+                            <img src="images/mail.png" style="width:40px;height:40px;">
                             <p>buzz@propclean.pro</p>
                         </div>
                     </div>
@@ -427,173 +495,359 @@
                 </div>
             </div>
         </div>
-        <footer class="footer-section">
+        <footer>
             <div class="footer-container">
-                <div class="footer-column">
+                <div class="footer-section logo-section">
                     <img src="images/logo2.png" alt="PropClean Logo" class="footer-logo">
-                    <p>Your All-in-One Solution for WorkSpace Compliance and Workspace Maintenance with Real-Time Monitoring</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-google"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <p>Your All-in-One Solution for Workspace Compliance and Workspace Maintenance with Real-Time Monitoring</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+                        <a href="https://plus.google.com" target="_blank"><img src="images/googleplus.png" alt="Google+"></a>
+                        <a href="https://wa.me/7392037856" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"></a>
                     </div>
                 </div>
-                <div class="footer-column">
+                <div class="footer-section links">
                     <h4>Useful Links</h4>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">App Layout</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#3">App Layout</a></li>
+                        <li><a href="#2">Features</a></li>
+                        <li><a href="#4">Pricing</a></li>
+                        <li><a href="#6">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-section product-help">
                     <h4>Product Help</h4>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#5">FAQ</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Support</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#6">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
-                    <div class="contact-item">
-                        <i class="fas fa-home"></i>
-                        <p>Excel Coworks – Naagarabhaavi, Bangalore 3rd Floor, Tushar Arcade, Service Road, Naagarabhaavi, Bengaluru, Karnataka 560072</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+91-7392037856</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>buzz@propclean.pro</p>
-                    </div>
+                <div class="footer-section contact">
+                    <h4>Contact US</h4>
+                    <ul>
+                        <li style="align-items: flex-start;">
+                            <img src="images/address.png" alt="Location"> 
+                            <span>Excel Coworks - Naagarabhaavi, Bangalore 3rd Floor, Tushar Arcade, Service Road, Naagarabhaavi, Bengaluru, Karnataka 560072</span>
+                        </li>
+                        <li style="display:flex; align-items:center;">
+                            <a href="tel:+917392078186">
+                                <img src="images/phone.png" alt="Phone" style="width:40px;height:40px;">
+                            </a>
+                            <a href="tel:+917392078186">+91-7392078186</a>
+                        </li>
+                        <li style="display:flex; align-items:center;">
+                            <a href="mailto:buzz@propclean.pro">
+                                <img src="images/mail.png" alt="Email" style="width:40px;height:40px;">
+                            </a>
+                            <a href="mailto:buzz@propclean.pro">buzz@propclean.pro</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© Copyrights 2024 PropClean. All rights reserved.</p>
+                <p>© Copyrights 2024 PropClean All rights reserved.</p>
             </div>
         </footer>
-        
-        
-        
-       
-<!-- Existing HTML -->
-
-        
-        <script src="script.js"></scrip>
+        <script src="script.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("animate");
-                observer.unobserve(entry.target);  // Stop observing once the animation is triggered
-            }
-        });
-    }, {
-        threshold: 0.1  // Trigger when 10% of the section is visible
-    });
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("animate");
+                            observer.unobserve(entry.target);  // Stop observing once the animation is triggered
+                        }
+                    });
+                }, {
+                    threshold: 0.1  // Trigger when 10% of the section is visible
+                });
+                document.querySelectorAll('.about-left, .about-right').forEach(section => {
+                    observer.observe(section);
+                });
+            });
 
-    document.querySelectorAll('.about-left, .about-right').forEach(section => {
-        observer.observe(section);
-    });
-});
+            document.getElementById('monthlyBtn').addEventListener('click', function() {
+                this.classList.add('active');
+                document.getElementById('annuallyBtn').classList.remove('active');
+                document.querySelector('.toggle-background').style.left = '0';
+            });
 
+            document.getElementById('annuallyBtn').addEventListener('click', function() {
+                this.classList.add('active');
+                document.getElementById('monthlyBtn').classList.remove('active');
+                document.querySelector('.toggle-background').style.left = '50%';
+            });
         </script>
         <script>
-           document.addEventListener("DOMContentLoaded", function() {
-    const carousel = document.querySelector('.carousel');
-    const prevBtn = document.querySelector('.carousel-prev');
-    const nextBtn = document.querySelector('.carousel-next');
-    let currentIndex = 0;
-    const totalItems = document.querySelectorAll('.carousel .screenshot').length;
-    const visibleItems = 4; // Number of visible items
+            document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById('pricingToggle').checked = false; 
+                document.getElementById('monthlyBtn').classList.add('active'); 
+                document.getElementById('annuallyBtn').classList.remove('active'); 
+                updatePrices(); 
+            });
 
-    function updateCarousel() {
-        const offset = -currentIndex * 100 / visibleItems;
-        carousel.style.transform = `translateX(${offset}%)`;
-    }
+            document.getElementById('pricingToggle').addEventListener('change', function () {
+                resetBillingCycle(); 
+                updatePrices(); 
+            });
 
-    function showNextSlide() {
-        currentIndex = (currentIndex < totalItems - visibleItems) ? currentIndex + 1 : 0;
-        updateCarousel();
-    }
+            document.getElementById('monthlyBtn').addEventListener('click', function () {
+                this.classList.add('active');
+                document.getElementById('annuallyBtn').classList.remove('active');
+                updatePrices(); 
+            });
 
-    prevBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - visibleItems;
-        updateCarousel();
+            document.getElementById('annuallyBtn').addEventListener('click', function () {
+                this.classList.add('active');
+                document.getElementById('monthlyBtn').classList.remove('active');
+                updatePrices(); 
+            });
+
+            function resetBillingCycle() {
+                document.getElementById('monthlyBtn').classList.add('active');
+                document.getElementById('annuallyBtn').classList.remove('active');
+            }
+
+            function updatePrices() {
+                const isAnnual = document.getElementById('annuallyBtn').classList.contains('active');
+                const isINR = document.getElementById('pricingToggle').checked;
+                
+                const essentialPrice = document.getElementById('essentialPrice');
+                const professionalPrice = document.getElementById('professionalPrice');
+                const enterprisePrice = document.getElementById('enterprisePrice');
+                
+                if (isINR) {
+                    if (isAnnual) {
+                        essentialPrice.textContent = '₹30,000'; 
+                        professionalPrice.textContent = '₹80,000';
+                        enterprisePrice.textContent = '₹80,000';
+                    } else {
+                        essentialPrice.textContent = '₹3,600'; 
+                        professionalPrice.textContent = '₹9,500'; 
+                        enterprisePrice.textContent = '₹9,500'; 
+                    }
+                } else {
+                    if (isAnnual) {
+                        essentialPrice.textContent = '$600'; 
+                        professionalPrice.textContent = '$1,200'; 
+                        enterprisePrice.textContent = '$1,200'; 
+                    } else {
+                        essentialPrice.textContent = '$49'; 
+                        professionalPrice.textContent = '$129'; 
+                        enterprisePrice.textContent = '$129'; 
+                    }
+                }
+            }
+            updatePrices();
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const carousel = document.querySelector('.carousel');
+                const prevBtn = document.querySelector('.carousel-prev');
+                const nextBtn = document.querySelector('.carousel-next');
+                let currentIndex = 0;
+                const totalItems = document.querySelectorAll('.carousel .screenshot').length;
+                const visibleItems = 4; // Number of visible items
+const dots = document.querySelectorAll('.dot');
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        // Move the carousel to the respective slide
+        const offset = index * carousel.clientWidth;
+        carousel.style.transform = `translateX(-${offset}px)`;
+
+        // Update active dot
+        document.querySelector('.dot.active').classList.remove('active');
+        dot.classList.add('active');
     });
-
-    nextBtn.addEventListener('click', () => {
-        currentIndex = (currentIndex < totalItems - visibleItems) ? currentIndex + 1 : 0;
-        updateCarousel();
-    });
-
-    // Auto-slide functionality
-    setInterval(showNextSlide, 3000); // Change the slide every 3 seconds
 });
 
+
+                function updateCarousel() {
+                    const offset = -currentIndex * 100 / visibleItems;
+                    carousel.style.transform = `translateX(${offset}%)`;
+                }
+
+                function showNextSlide() {
+                    currentIndex = (currentIndex < totalItems - visibleItems) ? currentIndex + 1 : 0;
+                    updateCarousel();
+                }
+
+                function showPrevSlide() {
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - visibleItems;
+                    updateCarousel();
+                }
+
+                prevBtn.addEventListener('click', showPrevSlide);
+                nextBtn.addEventListener('click', showNextSlide);
+            });
         </script>
         <script>
             document.getElementById('pricingToggle').addEventListener('change', function () {
-    const usdLabel = document.querySelector('.usd-label');
-    const inrLabel = document.querySelector('.inr-label');
-    const essentialPrice = document.getElementById('essentialPrice');
-    const professionalPrice = document.getElementById('professionalPrice');
-    const enterprisePrice = document.getElementById('enterprisePrice');
-    
-    if (this.checked) {
-        usdLabel.classList.remove('active');
-        inrLabel.classList.add('active');
-        // Change prices to INR
-        essentialPrice.textContent = '₹3,600';
-        professionalPrice.textContent = '₹9,500';
-        enterprisePrice.textContent = '₹9,500';
-    } else {
-        inrLabel.classList.remove('active');
-        usdLabel.classList.add('active');
-        // Change prices back to USD
-        essentialPrice.textContent = '$49';
-        professionalPrice.textContent = '$129';
-        enterprisePrice.textContent = '$129';
-    }
-});
+                const usdLabel = document.querySelector('.usd-label');
+                const inrLabel = document.querySelector('.inr-label');
+                const essentialPrice = document.getElementById('essentialPrice');
+                const professionalPrice = document.getElementById('professionalPrice');
+                const enterprisePrice = document.getElementById('enterprisePrice');
+                
+                if (this.checked) {
+                    usdLabel.classList.remove('active');
+                    inrLabel.classList.add('active');
+                    essentialPrice.textContent = '₹3,600';
+                    professionalPrice.textContent = '₹9,500';
+                    enterprisePrice.textContent = '₹9,500';
+                } else {
+                    inrLabel.classList.remove('active');
+                    usdLabel.classList.add('active');
+                    essentialPrice.textContent = '$49';
+                    professionalPrice.textContent = '$129';
+                    enterprisePrice.textContent = '$129';
+                }
+            });
 
-document.getElementById('monthlyBtn').addEventListener('click', function () {
-    this.classList.add('active');
-    document.getElementById('annuallyBtn').classList.remove('active');
-    // Implement logic to show monthly prices
-});
+            document.getElementById('monthlyBtn').addEventListener('click', function () {
+                this.classList.add('active');
+                document.getElementById('annuallyBtn').classList.remove('active');
+            });
 
-document.getElementById('annuallyBtn').addEventListener('click', function () {
-    this.classList.add('active');
-    document.getElementById('monthlyBtn').classList.remove('active');
-    // Implement logic to show annual prices with discount
-});
-
+            document.getElementById('annuallyBtn').addEventListener('click', function () {
+                this.classList.add('active');
+                document.getElementById('monthlyBtn').classList.remove('active');
+            });
         </script>
         <script>
             document.querySelectorAll('.faq-question').forEach(item => {
-    item.addEventListener('click', event => {
-        const parent = item.parentNode;
-        parent.classList.toggle('active');
-        
-        const answer = parent.querySelector('.faq-answer');
-        if (parent.classList.contains('active')) {
-            answer.style.maxHeight = answer.scrollHeight + 'px';
+                item.addEventListener('click', event => {
+                    const parent = item.parentNode;
+                    parent.classList.toggle('active');
+
+                    const answer = parent.querySelector('.faq-answer');
+                    const arrow = item.querySelector('.material-symbols-outlined');
+
+                    if (parent.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        arrow.style.transform = 'rotate(90deg)';
+                    } else {
+                        answer.style.maxHeight = '0';
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const subscribeForm = document.querySelector('.subscribe-form');
+                const emailInput = subscribeForm.querySelector('input[type="email"]');
+                const submitButton = subscribeForm.querySelector('button[type="submit"]');
+
+                subscribeForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); 
+
+                    if (emailInput.value.trim() === "") {
+                        alert("Please enter your email ID.");
+                    } else {
+                        alert("Trial successfully booked!");
+                        emailInput.value = ""; 
+                    }
+                });
+            });
+            document.addEventListener("DOMContentLoaded", function() {
+    // Event listener for 'Start free trial' button
+    const subscribeForm = document.querySelector('.subscribe-form');
+    const emailInput = subscribeForm.querySelector('input[type="email"]');
+    const freeTrialButton = subscribeForm.querySelector('button[type="submit"]');
+
+    freeTrialButton.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        if (emailInput.value.trim() === "") {
+            alert("Please enter your email ID.");
         } else {
-            answer.style.maxHeight = '0';
+            alert("Free trial successfully started!");
+            emailInput.value = ""; // Clear the email input field after submission
+        }
+    });
+
+    // Event listener for 'Book a Trial' button
+    const bookTrialButton = document.querySelector('.login button[type="submit"]');
+
+    bookTrialButton.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default form submission behavior
+
+        if (emailInput.value.trim() === "") {
+            alert("Please enter your email ID.");
+        } else {
+            alert("Trial successfully booked!");
         }
     });
 });
 
         </script>
-        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const statNumbers = document.querySelectorAll('.stat-number');
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const target = entry.target;
+                            const targetNumber = target.getAttribute('data-target');
+                            animateStat(target, targetNumber);
+                            observer.unobserve(target);
+                        }
+                    });
+                }, {
+                    threshold: 0.5 
+                });
+
+                statNumbers.forEach(stat => {
+                    observer.observe(stat);
+                });
+
+                function animateStat(element, targetNumber) {
+                    let start = 0;
+                    const duration = 2000; 
+                    const increment = targetNumber / (duration / 10);
+
+                    const interval = setInterval(() => {
+                        start += increment;
+                        if (start >= targetNumber) {
+                            element.textContent = targetNumber;
+                            clearInterval(interval);
+                        } else {
+                            element.textContent = Math.floor(start);
+                        }
+                    }, 10); 
+                }
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const aboutLeft = document.querySelector('.about-left');
+                const aboutRight = document.querySelector('.about-right');
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            if (entry.target === aboutLeft) {
+                                aboutLeft.classList.add('animate-left');
+                            } else if (entry.target === aboutRight) {
+                                aboutRight.classList.add('animate-right');
+                            }
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.5 
+                });
+
+                observer.observe(aboutLeft);
+                observer.observe(aboutRight);
+            });
+        </script>
     </body>
-</html>
