@@ -14,7 +14,7 @@ body, html {
 }
 
 .Home {
-    background-image: url('images/header.png');
+    background-image: url('images/header.webp');
     background-size:100% 100%;
     background-repeat: no-repeat;
     height: 100vh;
@@ -99,22 +99,6 @@ button.login:hover {
     color: #007bff;
 }
 
-/* .login button {
-background-color: transparent;
-color: white;
-border: 2px solid white;
-padding: 10px 20px;
-cursor: pointer;
-border-radius: 5px;
-font-size: 18px;
-transition: background-color 0.3s, color 0.3s;
-}
-
-.login button:hover {
-background-color: white;
-color: #007bff;
-} */
-
 .home1 {
     display:flex;
     flex-direction: column;
@@ -183,8 +167,8 @@ min-width: 0;
 .subscribe-form button {
 padding: 18px 20px;
 border: none;
-background-color: #007bff;
-color: white;
+background-color: #ffcd3e;
+color: black;
 cursor: pointer;
 font-size: 1em;
 font-weight: 500;
@@ -194,7 +178,8 @@ transition: background-color 0.3s;
 }
 
 .subscribe-form button:hover {
-background-color: #0056b3;
+background-color: #987a26;
+color:white;
 }
 
 .subscribe-form input[type="email"]::placeholder {
@@ -205,6 +190,7 @@ color: #aaa;
 position: absolute;
 right: 220px;
 bottom: 0px;
+aspect-ratio:0.60;
 }
 
 .mobile-image img {
@@ -262,6 +248,8 @@ bottom: 0px;
     .home1 {
         padding-left: 40px;
         margin-top: 80px;
+        position:relative;
+        bottom: 60px;
     }
 
     .heading {
@@ -277,7 +265,7 @@ bottom: 0px;
     }
 
     .mobile-image {
-        right: 100px;
+        top: 100px;
         width: 400px;
     }
 }
@@ -292,6 +280,7 @@ bottom: 0px;
 @media screen and (max-height: 600px) {
     .mobile-image img {
         height: 500px;
+        margin-top:100px;
         margin-right:60px;
         width: auto; /* Ensure the width adjusts proportionally */
     }
@@ -367,10 +356,6 @@ bottom: 0px;
         display:none;
     }
 
-    /* .pointsul {
-        display: block;
-        text-align: center;
-    } */
 
     .subheading {
         width: 70%;
@@ -530,14 +515,10 @@ bottom: 0px;
     font-weight: 500;
 }
 
-/* Transition for number increase animation */
 .stat-number {
     transition: all 1s ease-out;
 }
 
-/* Media Queries for Responsiveness */
-
-/* Above 576px: No change, flex-row remains */
 @media screen and (min-width: 577px) {
     .stats-section {
         flex-direction: row; /* Ensure row layout for larger screens */
@@ -637,14 +618,7 @@ bottom: 0px;
     max-height: 700px; 
 }
 
-/* .about-img{
-    height: auto;
-    width: 400px;
-    max-height: 700px; 
-    margin: 0 auto;
-    margin-left: 60px;
-    display:none;
-} */
+
 
 .about-features {
     list-style-type: none;
@@ -1272,8 +1246,8 @@ bottom: 0px;
 }
 
 .review-author-title {
-    font-size: 14px;
-    color: #777;
+    font-size: 16px;
+    color: #1c1c1c;
 }
 
 .carousel-indicators {
@@ -1435,7 +1409,7 @@ bottom: 0px;
     margin-bottom: 40px;
     width: 700px;
     margin: 0 auto;
-    color: #565656;
+    color: #1b1a1a;
 }
 
 .pricing-section {
@@ -1478,7 +1452,7 @@ bottom: 0px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #8f8e8e;
     transition: .4s;
     border-radius: 34px;
 }
@@ -1519,6 +1493,7 @@ input:checked + .slider:before {
 .usd-label {
     padding-left: 20px;
     font-size: 20px;
+    font-weight: 600;
     color: #007bff;
     margin-right: 10px;
 }
@@ -1527,6 +1502,7 @@ input:checked + .slider:before {
     color: #333;
     margin-left: 10px;
     font-size: 20px;
+    font-weight: 600;
 }
 
 .toggle-container {
@@ -2101,6 +2077,9 @@ footer {
     left:-40px;
 }
 
+.tu{
+    color:#000000;
+}
 .social-media a {
     margin-right: 10px;
 }
@@ -2150,7 +2129,13 @@ footer {
     border-top: 1px solid #eee;
     margin: 0 160px;
     padding-top: 10px;
-    color: #aaa;
+    color: #000000;
+}
+
+.fot-link{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:30px;
 }
 
 /* Responsive Adjustments */
@@ -2253,18 +2238,7 @@ footer {
 #al{
     width:100%;
 }
-/* .footer-section ul li a:hover {
-    color: #007bff;
-}
 
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #eee;
-    margin:0 160px;
-    padding-top: 10px;
-    color: #aaa;
-} */
 
 .contact ul li{
     display:flex;
