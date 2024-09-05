@@ -2248,3 +2248,14 @@ footer {
 .about-right.animate-right {
     animation: slideInRight 600ms ease-in-out forwards;
 }
+.inv{
+    width:100%;
+    background-color:#ffcd3e;
+    color:black;
+    padding:6px;
+    font-size:14px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
