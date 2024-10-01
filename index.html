@@ -251,10 +251,10 @@
                         PropClean has completely transformed how we manage our coworking space. The real-time updates and photo verification make it so much easier to ensure tasks are completed to our standards. It's a game-changer!
                     </p>
                     <div class="review-author">
-                        <img src="images/customer.webp" loading="lazy" alt="Arvind N." class="review-author-photo" width="" height="">
+                        <img src="images/th (4).jpeg" loading="lazy" alt="Arvind N." class="review-author-photo" width="" height="">
                         <div class="review-author-info">
-                            <p class="review-author-name">Arvind N.</p>
-                            <p class="review-author-title">CEO, Themeland</p>
+                            <p class="review-author-name">Anshu Singh</p>
+                            <p class="review-author-title">CEO, Karyasthal</p>
                         </div>
                     </div>
                 </div>
@@ -265,10 +265,10 @@
                         The intuitive interface and seamless task tracking have made my job as an admin so much simpler. I can now monitor and approve tasks on the go, and our workspace has never been better maintained.
                     </p>
                     <div class="review-author">
-                        <img src="images/customer.webp" loading="lazy" alt="Junaid Hasan" class="review-author-photo" width="" height="">
+                        <img src="images/th.jpeg" loading="lazy" alt="Junaid Hasan" class="review-author-photo" width="" height="">
                         <div class="review-author-info">
                             <p class="review-author-name">Junaid Hasan</p>
-                            <p class="review-author-title">CEO, Themeland</p>
+                            <p class="review-author-title">CEO, Workdesq</p>
                         </div>
                     </div>
                 </div>
@@ -279,10 +279,10 @@
                         PropClean’s photo verification and approval system give me peace of mind that our space is always in top condition. It’s easy to use, and the team loves it too. Highly recommend!
                     </p>
                     <div class="review-author">
-                        <img src="images/customer.webp" loading="lazy" alt="Junaid Hasan" class="review-author-photo" width="" height="">
+                        <img src="images/300-EV983086.jpg" loading="lazy" alt="Junaid Hasan" class="review-author-photo" width="" height="">
                         <div class="review-author-info">
-                            <p class="review-author-name">Junaid Hasan</p>
-                            <p class="review-author-title">CEO, Themeland</p>
+                            <p class="review-author-name">Arvind N.</p>
+                            <p class="review-author-title">CEO, Cubispace</p>
                         </div>
                     </div>
                 </div>
@@ -320,7 +320,8 @@
                 <div class="pricing-card">
                     <img src ="images/Lawyer.webp" loading="lazy" width="" height="" alt="img">
                     <h3 class="pricing-card-title">Essential</h3>
-                    <p class="pricing-amount" id="essentialPrice">$49</p>
+                    <p class="pricing-amount" id="essentialPrice">$9</p>
+                    <p class="per">/user per month</p>
                     <ul class="pricing-features">
                         <li>Single coworking space</li>
                         <li>Onboard up to 10 staff members</li>
@@ -332,10 +333,11 @@
                     <img src ="images/Lawyer.webp" loading="lazy" width="" height="" alt="img">
                     <h3 class="pricing-card-title">Professional</h3>
                     <p class="pricing-amount" id="professionalPrice">$129</p>
+                    <p class="per">/user per month</p>
                     <ul class="pricing-features">
                         <li>5 Coworking Spaces</li>
                         <li>Onboard up to 50 staff members</li>
-                        <li>Custom Design</li>
+                        <li>24/7 Tech Support</li>
                         <li>Daily Backups & Advanced Features</li>
                     </ul>
                 </div>
@@ -635,23 +637,27 @@
                 
                 if (isINR) {
                     if (isAnnual) {
-                        essentialPrice.textContent = '₹30,000'; 
-                        professionalPrice.textContent = '₹80,000';
-                        enterprisePrice.textContent = '₹80,000';
+                        essentialPrice.textContent = '₹80'; 
+                        professionalPrice.textContent = '₹100';
+                        enterprisePrice.textContent = 'Request'; 
+                        enterprisePrice.style.fontSize="22px";
                     } else {
-                        essentialPrice.textContent = '₹3,600'; 
-                        professionalPrice.textContent = '₹9,500'; 
-                        enterprisePrice.textContent = '₹9,500'; 
+                        essentialPrice.textContent = '₹100'; 
+                        professionalPrice.textContent = '₹120'; 
+                        enterprisePrice.textContent = 'Request'; 
+                        enterprisePrice.style.fontSize="22px";
                     }
                 } else {
                     if (isAnnual) {
-                        essentialPrice.textContent = '$600'; 
-                        professionalPrice.textContent = '$1,200'; 
-                        enterprisePrice.textContent = '$1,200'; 
+                        essentialPrice.textContent = '$4'; 
+                        professionalPrice.textContent = '$6'; 
+                        enterprisePrice.textContent = 'Request'; 
+                        enterprisePrice.style.fontSize="22px";
                     } else {
-                        essentialPrice.textContent = '$49'; 
-                        professionalPrice.textContent = '$129'; 
-                        enterprisePrice.textContent = '$129'; 
+                        essentialPrice.textContent = '$8'; 
+                        professionalPrice.textContent = '$12'; 
+                        enterprisePrice.textContent = 'Request'; 
+                        enterprisePrice.style.fontSize="22px";
                     }
                 }
             }
@@ -710,15 +716,17 @@ dots.forEach((dot, index) => {
                 if (this.checked) {
                     usdLabel.classList.remove('active');
                     inrLabel.classList.add('active');
-                    essentialPrice.textContent = '₹3,600';
-                    professionalPrice.textContent = '₹9,500';
-                    enterprisePrice.textContent = '₹9,500';
+                    essentialPrice.textContent = '₹100';
+                    professionalPrice.textContent = '₹120';
+                    enterprisePrice.textContent = 'Request'; 
+                    enterprisePrice.style.fontSize="22px";
                 } else {
                     inrLabel.classList.remove('active');
                     usdLabel.classList.add('active');
-                    essentialPrice.textContent = '$49';
-                    professionalPrice.textContent = '$129';
-                    enterprisePrice.textContent = '$129';
+                    essentialPrice.textContent = '$8';
+                    professionalPrice.textContent = '$10';
+                    enterprisePrice.textContent = 'Request'; 
+                    enterprisePrice.style.fontSize="22px";
                 }
             });
 

@@ -2320,3 +2320,8 @@ footer {
     color:black;
     padding-top: 4px;
 }
+
+.per{
+    position:relative;
+    top:-12px;
+}
