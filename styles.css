@@ -97,10 +97,11 @@ transform: scaleX(1);
 transform-origin: bottom left;
 }
 
-button.login {
+a.login {
     display: flex;
     align-items: center;
     gap: 6px;
+    text-decoration-line: none;
     background-color: transparent;
     color: white;
     border: 2px solid white;
@@ -111,7 +112,7 @@ button.login {
     transition: background-color 0.3s, color 0.3s;
 }
 
-button.login:hover {
+a.login:hover {
     background-color: white;
     color: #007bff;
 }
@@ -181,7 +182,7 @@ flex: 1;
 min-width: 0;
 }
 
-.subscribe-form button {
+.subscribe-form a {
 padding: 18px 20px;
 border: none;
 background-color: #ffcd3e;
@@ -192,9 +193,10 @@ font-weight: 500;
 border-radius: 0 8px 8px 0;
 white-space: nowrap;
 transition: background-color 0.3s;
+text-decoration-line: none;
 }
 
-.subscribe-form button:hover {
+.subscribe-form a:hover {
 background-color: #987a26;
 color:white;
 }
@@ -369,7 +371,7 @@ aspect-ratio:0.60;
         font-size: 64px;
         line-height: 60px;
     }
-    button.login{
+    a.login{
         display:none;
     }
 
@@ -2011,7 +2013,7 @@ box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.12);
     min-height: 100px;
 }
 
-.contact-form button {
+.contact-form a {
 background-color: #007bff;
 color: white;
 border: none;
@@ -2019,10 +2021,12 @@ padding: 15px;
 cursor: pointer;
 border-radius: 5px;
 font-size: 16px;
+text-decoration-line: none;
+text-align: center;
 transition: background-color 0.3s, color 0.3s;
 }
 
-.contact-form button:hover {
+.contact-form a:hover {
 background-color: #0056b3;
 }
 
@@ -2306,4 +2310,13 @@ footer {
     position:sticky;
     top:0;
     z-index:10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.arr{
+    color:black;
+    padding-top: 4px;
 }
