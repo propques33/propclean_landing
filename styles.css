@@ -97,7 +97,7 @@ transform: scaleX(1);
 transform-origin: bottom left;
 }
 
-a.login {
+button.login-btn{
     display: flex;
     align-items: center;
     gap: 6px;
@@ -112,7 +112,7 @@ a.login {
     transition: background-color 0.3s, color 0.3s;
 }
 
-a.login:hover {
+button.login-btn:hover{
     background-color: white;
     color: #007bff;
 }
@@ -167,6 +167,8 @@ min-width:375px;
 
 .subscribe-form {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
     width: 70%;
 }
@@ -183,14 +185,14 @@ min-width: 0;
 }
 
 .subscribe-form a {
-padding: 18px 20px;
+padding: 16px 20px;
 border: none;
 background-color: #ffcd3e;
 color: black;
 cursor: pointer;
 font-size: 1em;
 font-weight: 500;
-border-radius: 0 8px 8px 0;
+border-radius:  0px 8px 8px 0px;
 white-space: nowrap;
 transition: background-color 0.3s;
 text-decoration-line: none;
@@ -200,6 +202,7 @@ text-decoration-line: none;
 background-color: #987a26;
 color:white;
 }
+
 
 .subscribe-form input[type="email"]::placeholder {
 color: #aaa;
@@ -286,6 +289,10 @@ aspect-ratio:0.60;
     .mobile-image {
         top: 100px;
         width: 400px;
+    }
+
+    .subscribe-form a{
+        padding:23px 22px;
     }
 }
 
@@ -620,6 +627,7 @@ aspect-ratio:0.60;
     margin: 0 auto;
     gap: 40px;
 }
+
 
 /* .about-left, .about-right {
     margin-top: 110px;
@@ -1749,6 +1757,25 @@ input:checked + .slider:before {
     }
 }
 
+/* Styling for the Start Free Trial button */
+button.free-btn {
+    padding: 18px 20px;
+    border: none;
+    background-color: #ffcd3e;
+    color: black;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 0px 8px 8px 0px;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+button.free-btn:hover {
+    background-color: #987a26;
+    color: white;
+}
+
 /* Base styles for the FAQ section */
 .faq-section {
     padding: 60px 40px;
@@ -2325,3 +2352,274 @@ footer {
     position:relative;
     top:-12px;
 }
+
+.modal {
+     display: none; 
+     position: fixed;
+     overflow-y:scroll; 
+     z-index: 1; 
+     padding-top: 100px; 
+     left: 0; 
+     top: 0; 
+     width: 100%; 
+     height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+    .modal-content {
+         background-color: #fff;
+         color:#000;
+          margin: auto;
+           padding: 20px; 
+          border-radius: 8px;
+           width: 70%; 
+           display:flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+        .lo{
+            width:70%;
+            margin:0 auto;
+            text-align:center;
+            padding-bottom: 20px;
+        }
+        .forbtn{
+            width:100%;
+            margin-top:12px;
+            padding:18px 0px;
+            margin-bottom:10px;
+            font-size: 18px;
+            font-weight: 500;
+            background-color:#335ef7;
+            transition: background-color 80ms;
+        }
+        .forbtn:hover{
+            background-color: #0056b3;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 20px;
+            color:red;
+        }
+    input { 
+        width: 100%; 
+        margin: 10px 0;
+        padding: 14px 10px; 
+        border: 2px solid #8f8f8f;
+        border-radius: 6px;
+     }
+     input::placeholder{
+        font-size: 16px;
+        color:#7a7676;
+     }
+       
+    button 
+    {
+    background-color: #4CAF50;
+     color: white;
+      padding: 10px 20px;
+       border: none;
+        border-radius: 4px;
+         cursor: pointer;
+         }
+         .form1{
+            display:flex;
+            flex-direction: column;
+            width:100%;
+            padding:0px 0px;
+            column-gap: 15px;
+         }
+
+         .form2{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            width:100%;
+            padding:0px 0px;
+            column-gap: 15px;
+        }  
+         @media screen and (max-width: 576px) {
+            .modal-content{
+                width: 90%; 
+            }
+            .lo{
+                width:70%;
+            }
+            .form1{
+                display:flex;
+                flex-direction: column;
+                width:100%;
+                padding:0px 0px;
+            }  
+         }
+         @media screen and (min-width: 1024px) {
+            .modal-content{
+                width: 50%; 
+            }
+            .lo{
+                width:55%;
+            }
+        }
+
+        /* Thank You Modal */
+        .thank-you-modal {
+            display: none; /* Initially hidden */
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9); /* Light background overlay */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .thank-you-content {
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .celb,
+        .celb1 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+        }
+        
+        .celb {
+            left: 20px;
+        }
+        
+        .celb1 {
+            right: 20px;
+        }
+        
+        .thank-you-content h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #407af5;
+            margin-bottom: 20px;
+        }
+        
+        .thank-you-content p {
+            font-size: 18px;
+            color: #4a4a4a;
+            margin-bottom: 20px;
+            padding: 0px 30px;
+        }
+        
+        .thank-you-btn {
+            background-color: #407af5;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .thank-you-btn:hover {
+            background-color: #3362d9;
+        }
+        
+        .resend-email {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .resend-email a {
+            color: #407af5;
+            text-decoration: none;
+        }
+        
+        .resend-email a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .thank-you-content {
+                padding: 30px;
+                max-width: 90%;
+                position: relative;
+            }
+        
+            .thank-you-content h1 {
+                font-size: 28px;
+            }
+        
+            .thank-you-content p {
+                font-size: 16px;
+            }
+        
+            .celb, .celb1 {
+                width: 70px;
+                height: 70px;
+                top: 10px;
+            }
+        
+            .celb {
+                left: 10px;
+            }
+        
+            .celb1 {
+                right: 10px;
+            }
+        
+            .thank-you-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .thank-you-content {
+                padding: 20px;
+                max-width: 100%;
+            }
+        
+            .thank-you-content h1 {
+                font-size: 24px;
+            }
+        
+            .thank-you-content p {
+                font-size: 14px;
+                padding: 0px 20px;
+            }
+        
+            .celb, .celb1 {
+                width: 50px;
+                height: 50px;
+                top: 5px;
+            }
+        
+            .celb {
+                left: 5px;
+            }
+        
+            .celb1 {
+                right: 5px;
+            }
+        
+            .thank-you-btn {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+        }
