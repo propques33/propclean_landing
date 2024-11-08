@@ -194,8 +194,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Reset the form and close the modal after successful submission
              // Step 3: Show the Thank You section after successful submission
-             formModal.style.display = 'none'; // Close the form modal
-             thankYouSection.style.display = 'flex'; 
+             // Redirect to the thankyou.html page after successful submission
+window.location.href = 'thankyou.html';
 
         } catch (error) {
             console.error('Error during submission:', error);
