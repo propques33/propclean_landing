@@ -62,7 +62,7 @@
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=458987717189742&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->
+    <!-- End Meta Pixel Code -->
     </head>
     <body>
         <a href="https://calendly.com/propclean-india/30min" target="_blank" style="text-decoration-line: none;"><div class="inv">We are inviting a limited number of beta users. Schedule a demo with us to get early access <span class="arr"><img src="./images/arrow1.svg"></span></div></a>
@@ -145,7 +145,17 @@
                 </form>
             </div>
         </div>
-        
+        <!-- Thank You Section -->
+<div id="thankYouSection" class="thank-you-modal">
+    <div class="thank-you-content">
+        <!-- <img src="images/pngtree-colorfull-birthday-confetti-poppers-vector-png-image_12224628.png" class="celb" width="150px" height="150px">
+        <img src="images/pngtree-colorfull-birthday-confetti-poppers-vector-png-image_12224628.png" class="celb1" width="150px" height="150px"> -->
+        <img src="images/logo2.webp" class="lo">
+        <h1>Thank You!!</h1>
+        <p>Thanks for Booking a demo with us.We will reach out to you via email or phone to schedule your demo.</p>
+        <button id="goHomeBtn" class="thank-you-btn">Go Home</button>
+    </div>
+</div>
         <!-- New Section for Statistics -->
         <div class="stats-section">
             <div class="stat-item">
@@ -746,7 +756,7 @@ dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
         // Move the carousel to the respective slide
         const offset = index * carousel.clientWidth;
-        carousel.style.transform = `translateX(-${offset}px)`;
+        carousel.style.transform = translateX(-${offset}px);
 
         // Update active dot
         document.querySelector('.dot.active').classList.remove('active');
@@ -757,7 +767,7 @@ dots.forEach((dot, index) => {
 
                 function updateCarousel() {
                     const offset = -currentIndex * 100 / visibleItems;
-                    carousel.style.transform = `translateX(${offset}%)`;
+                    carousel.style.transform = translateX(${offset}%);
                 }
 
                 function showNextSlide() {
