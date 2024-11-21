@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /user-profile/
+Disallow: /settings/
+Allow: /
+
+Sitemap: https://propclean.space/sitemap.xml

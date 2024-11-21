@@ -2511,7 +2511,7 @@ footer {
             right: 20px;
         }
         
-        .thank-you-content h1 {
+        .thank-you-content div {
             font-size: 36px;
             font-weight: bold;
             color: #407af5;
