@@ -2377,8 +2377,8 @@ footer {
            justify-content: center;
            align-items: center;
         }
-        .lo{
-            width:70%;
+        img.lo{
+            width:100px;
             margin:0 auto;
             text-align:center;
             padding-bottom: 20px;
@@ -2445,7 +2445,7 @@ footer {
                 width: 90%; 
             }
             .lo{
-                width:70%;
+                width:100px;
             }
             .form1{
                 display:flex;
@@ -2459,7 +2459,7 @@ footer {
                 width: 50%; 
             }
             .lo{
-                width:55%;
+                width:100px;
             }
         }
 
