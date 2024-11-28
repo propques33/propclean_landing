@@ -18,20 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Modal Functionality
-    const emailInput = document.getElementById('emailInput');
-    const sendOtpButton = document.getElementById('sendOtpButton');
-    const otpInput = document.getElementById('otpInput');
-    const verifyOtpButton = document.getElementById('verifyOtpButton');
-    const emailVerificationForm = document.getElementById('emailVerificationForm');
-    const otpVerificationForm = document.getElementById('otpVerificationForm');
-    const emailInputMain = document.getElementById('emailInputMain'); // Read-only email in the main form
-    let generatedOtp = ''; // Store generated OTP
-    let verifiedEmail = ''; 
+    // const emailInput = document.getElementById('emailInput');
+    // const sendOtpButton = document.getElementById('sendOtpButton');
+    // const otpInput = document.getElementById('otpInput');
+    // const verifyOtpButton = document.getElementById('verifyOtpButton');
+    // const emailVerificationForm = document.getElementById('emailVerificationForm');
+    // const otpVerificationForm = document.getElementById('otpVerificationForm');
+    // const emailInputMain = document.getElementById('emailInputMain'); // Read-only email in the main form
+    // let generatedOtp = ''; // Store generated OTP
+    // let verifiedEmail = ''; 
     const formModal = document.getElementById('formModal');
-    const startTrialLink = document.getElementById('startTrialButton');
-    const bookTrialLink = document.getElementById('bookTrialButton');
     const closeButton = document.querySelector('.close-button');
     const demoForm = document.getElementById('demoForm');
+    const startTrialButton = document.getElementById('startTrialButton');
+    const bookTrialButton = document.getElementById('bookTrialButton');
     const thankYouSection = document.getElementById('thankYouSection');
     const goHomeBtn = document.getElementById('goHomeBtn');
 
@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function openModal(event) {
         event.preventDefault(); // Prevent link navigation
         formModal.style.display = 'flex'; // Ensure modal is displayed
+        demoForm.style.display = 'block'; 
     }
 
     // Function to close the modal
@@ -50,88 +51,88 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Function to generate a random 6-digit OTP
-    function generateOtp() {
-        return Math.floor(100000 + Math.random() * 900000).toString();
-    }
+    // function generateOtp() {
+    //     return Math.floor(100000 + Math.random() * 900000).toString();
+    // }
 
     // Function to send OTP to email using EmailJS
-    async function sendOtpToEmail(email) {
-        generatedOtp = generateOtp(); // Generate OTP
-        const templateParams = {
-            to_email: email,
-            otp: generatedOtp, // Pass OTP to the template
-        };
+    // async function sendOtpToEmail(email) {
+    //     generatedOtp = generateOtp(); // Generate OTP
+    //     const templateParams = {
+    //         to_email: email,
+    //         otp: generatedOtp, // Pass OTP to the template
+    //     };
 
-        try {
-            const emailResponse = await emailjs.send(
-                'service_vf8hgx9', // Your EmailJS service ID
-                'template_pnxo1sz', // Your EmailJS OTP template ID
-                templateParams
-            );
-            console.log('OTP sent successfully!', emailResponse.status, emailResponse.text);
-            alert('OTP sent to your email.');
+    //     try {
+    //         const emailResponse = await emailjs.send(
+    //             'service_vf8hgx9', // Your EmailJS service ID
+    //             'template_pnxo1sz', // Your EmailJS OTP template ID
+    //             templateParams
+    //         );
+    //         console.log('OTP sent successfully!', emailResponse.status, emailResponse.text);
+    //         alert('OTP sent to your email.');
 
-            // Show the OTP verification form
-            otpVerificationForm.style.display = 'block';
+    //         // Show the OTP verification form
+    //         otpVerificationForm.style.display = 'block';
 
-        } catch (error) {
-            console.error('Error sending OTP:', error);
-            alert('Failed to send OTP. Please try again.');
-        }
-    }
+    //     } catch (error) {
+    //         console.error('Error sending OTP:', error);
+    //         alert('Failed to send OTP. Please try again.');
+    //     }
+    // }
 
     // Send OTP when "Verify Email" button is clicked
-    sendOtpButton.addEventListener('click', (event) => {
-        event.preventDefault();
-        const email = emailInput.value.trim();
+    // sendOtpButton.addEventListener('click', (event) => {
+    //     event.preventDefault();
+    //     const email = emailInput.value.trim();
 
-        if (email && email.includes('@')) {
-            if (email !== verifiedEmail) {
-                // If email has changed, send OTP and reset previous verification
-                sendOtpToEmail(email);
-            } else {
-                alert('This email is already verified.');
-            }
-        } else {
-            alert('Please enter a valid email.');
-        }
-    });
+    //     if (email && email.includes('@')) {
+    //         if (email !== verifiedEmail) {
+    //             // If email has changed, send OTP and reset previous verification
+    //             sendOtpToEmail(email);
+    //         } else {
+    //             alert('This email is already verified.');
+    //         }
+    //     } else {
+    //         alert('Please enter a valid email.');
+    //     }
+    // });
 
     // Function to verify the OTP
-    function verifyOtp(userOtp) {
-        if (userOtp === generatedOtp) {
-            alert('OTP verified successfully!');
-            verifiedEmail = emailInput.value.trim(); // Store the verified email
+    // function verifyOtp(userOtp) {
+    //     if (userOtp === generatedOtp) {
+    //         alert('OTP verified successfully!');
+    //         verifiedEmail = emailInput.value.trim(); // Store the verified email
 
-            // Hide OTP verification form and show the main form
-            otpVerificationForm.style.display = 'none';
-            emailVerificationForm.style.display = 'none';
-            demoForm.style.display = 'block';
+    //         // Hide OTP verification form and show the main form
+    //         otpVerificationForm.style.display = 'none';
+    //         emailVerificationForm.style.display = 'none';
+    //         demoForm.style.display = 'block';
 
-            // Set the verified email in the readonly email field
-            emailInputMain.value = verifiedEmail;
+    //         // Set the verified email in the readonly email field
+    //         emailInputMain.value = verifiedEmail;
 
-        } else {
-            alert('Invalid OTP. Please try again.');
-        }
-    }
+    //     } else {
+    //         alert('Invalid OTP. Please try again.');
+    //     }
+    // }
 
     // Verify OTP when the "Verify OTP" button is clicked
-    verifyOtpButton.addEventListener('click', (event) => {
-        event.preventDefault();
-        const userOtp = otpInput.value.trim();
-        verifyOtp(userOtp);
-    });
+    // verifyOtpButton.addEventListener('click', (event) => {
+    //     event.preventDefault();
+    //     const userOtp = otpInput.value.trim();
+    //     verifyOtp(userOtp);
+    // });
 
     // Function to reset the form if the email changes (to re-verify the email)
-    emailInput.addEventListener('input', () => {
-        // Reset the verified email if the email field is modified
-        if (verifiedEmail && emailInput.value.trim() !== verifiedEmail) {
-            otpVerificationForm.style.display = 'none';
-            demoForm.style.display = 'none';
-            verifiedEmail = ''; // Clear the verified email status
-        }
-    });
+    // emailInput.addEventListener('input', () => {
+    //     // Reset the verified email if the email field is modified
+    //     if (verifiedEmail && emailInput.value.trim() !== verifiedEmail) {
+    //         otpVerificationForm.style.display = 'none';
+    //         demoForm.style.display = 'none';
+    //         verifiedEmail = ''; // Clear the verified email status
+    //     }
+    // });
 
     // Event listeners for links
     startTrialButton.addEventListener('click', openModal);
@@ -166,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Step 1: Send data via EmailJS
-            const emailResponse = await emailjs.send(
+            await emailjs.send(
                 'service_vf8hgx9',  // Replace with your actual EmailJS service ID
                 'template_2dw0krc', // Replace with your actual EmailJS template ID
                 templateParams
